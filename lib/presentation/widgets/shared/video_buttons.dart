@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toktik/config/helpers/human_formats.dart';
 import 'package:toktik/domain/entities/video_post.dart';
 
 class VideoButtons extends StatelessWidget {
@@ -33,7 +34,7 @@ class _CustomButton extends StatelessWidget {
             onPressed: () {},
             icon: Icon(iconData, color: color, size: 35,),
             ),
-        Text('$value')
+        Text(HumanFormats.humanReadebleNumber(value.toDouble()))
       ],
     );
   }
