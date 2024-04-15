@@ -3,7 +3,7 @@ import 'package:toktik/domain/entities/video_post.dart';
 import 'package:toktik/infrastructure/models/local_video_model.dart';
 import 'package:toktik/shared/data/local_video_post.dart';
 
-class DiscoverProviders extends ChangeNotifier {
+class DiscoverProvider extends ChangeNotifier {
   bool initialLoading =
       true; //cuando se lanza la aplicacion no tenemos videos, entocnces ponemos a cargar los videos con initialLoading
   List<VideoPost> videos = [];

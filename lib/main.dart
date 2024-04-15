@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           lazy: false, //esto es para que se lance el contrusctor inmediatamente cuando se cree la referancia DicoverProvider, es decir , se cree la instancia y que ya este listo
-          create: (_) => DiscoverProviders()..loadNextPage()),
+          create: (_) => DiscoverProvider()..loadNextPage()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
