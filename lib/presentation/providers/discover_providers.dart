@@ -9,7 +9,7 @@ class DiscoverProvider extends ChangeNotifier {
   List<VideoPost> videos = [];
 // To Do: Repository, DataSource a aplicar en la seccion 8
   Future<void> loadNextPage() async {
-    await Future.delayed(const Duration(seconds: 2));
+    // await Future.delayed(const Duration(seconds: 2)); //simula carga de datos
 
     final List<VideoPost> newVideos = videoPosts.map((index) =>
             LocalVideoModel.fromJson(index).toVideoPostEntity())
